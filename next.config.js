@@ -1,3 +1,12 @@
-const withTM = require('@vercel/examples-ui/transpile')()
+/** @type {import('next').NextConfig} */
 
-module.exports = withTM()
+const i18n = {
+  defaultLocale: 'en',
+  locales: ['en', 'de', 'es'],
+};
+
+const nextConfig = {
+  i18n,
+};
+
+module.exports = nextConfig;
